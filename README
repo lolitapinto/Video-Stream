@@ -1,0 +1,8 @@
+download opencv jar from https://opencv.org/
+
+install in your system :-
+mvn install:install-file -Dfile=opencv-451.jar -DgroupId=opencvjar -DartifactId=opencv -Dversion=4.5.1 -Dpackaging=jar
+
+Set opencv library path :-
+-Djava.library.path=/path/to/the/directory/of/opencv-ddl eg : -Djava.library.path="C:\opencv\build\java\x64"
+
