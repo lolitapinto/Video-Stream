@@ -9,7 +9,7 @@ public class RTMPStream {
 
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
-        boolean b = streamVideoToRTMP("testvideo.mp4", "rtmp://10.111.137.201:1935/live/stream");
+        boolean b = streamVideoToRTMP("testvideo.mp4", "rtmp://serverip:1935/live/stream");
         long endTime = System.currentTimeMillis();
 
         System.out.println("Time taken to process : " + (endTime-startTime));

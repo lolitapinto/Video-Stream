@@ -37,19 +37,14 @@ public class StreamProcessor {
                 double  format = cap.get(Videoio.CAP_PROP_FORMAT);
 
                 log.info("frame Width is {}" ,width);
-                log.info("frame msec is {}" ,msec);
-                log.info("frame framePos is {}" ,msec);
-                log.info("frame fps is {}" ,msec);
-                log.info("frame format is {}" ,msec);
-
+                log.info("frame number is {}" ,msec);
+                log.info("frame framePos is {}" ,framePos);
+                log.info("frame fps is {}" ,fps);
+                log.info("frame format is {}" ,format);
             }
-
         }
 
-
     }
-
-
 
 
 }
