@@ -6,3 +6,10 @@ mvn install:install-file -Dfile=opencv-451.jar -DgroupId=opencvjar -DartifactId=
 Set opencv library path :-
 -Djava.library.path=/path/to/the/directory/of/opencv-ddl eg : -Djava.library.path="C:\opencv\build\java\x64"
 
+ffmpeg command to generate rtmp stream :
+ffmpeg  -re -y -i testvideo.mp4 -vcodec libx264 -vf fps=30 -b:a 128k -pix_fmt yuv420p -f flv -flvflags no_duration_filesize rtmp://10.111.137.201:1935/live/stream
+
+ffprobe to gather information from multimedia streams and prints it in human readable form:
+ffprobe -v quiet -print_format json -show_streams rtmp://10.111.137.201:1935/live/stream
+
+
